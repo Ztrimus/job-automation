@@ -1,0 +1,55 @@
+1. SUMMARY
+Versatile and self-driven professional with 4+ years of industrial experience in crafting end-to-end, production-ready full-stack software solutions through coherent analysis and relentless focus on efficient solutions with meticulous execution.
+
+2. EDUCATION
+2.1. Masters of Science in Computer Science
+Coursework: Social Media Mining, Knowledge Representation and Reasoning Algorithms, Statistical Machine Learning.
+
+2.2. Bachelor of Engineering
+Coursework: Data Structure and Algorithms, System Design, Object Oriented Programming, Operating System, Computer Networks, Information Theory, Artificial Intelligence, Machine learning, Digital Image, and Video Processing.
+
+3.TECHNICAL SKILLS
+3.1. Programming Languages: C#, Python, SQL, JavaScript, C++, R, Java, Shell Scripting
+3.2. Full-Stack: Angular, .Net Core, React, NodeJs, Vue, Django, Flask, FastAPI, MongoDB, SQL Server, PostgreSQL,MySQL,Postman
+3.3. Cloud and DevOps: Azure, AWS, Docker, Kubernetes, GCP, MLFlow, Jupyter Notebook, CI/CD, Git, GitHub
+3.4. Data Science: Databricks, PySpark, TensorFlow, PyTorch, MXNet, OpenCV, Scikit Learn, Pandas, Matplotlib, Numpy
+
+4. WORK EXPERIENCE
+4.1. Senior Analyst -Tiger Analytics
+4.1.1. Spearheaded development of Web App, Interactive Dashboards, Data & CI/CD pipelines, Constraint-based ML Models, and Comprehensive Documentation for MSP Value Optimization in Petcare sector with a team of 8 analysts. (Team Leadership)
+4.1.2. Developed MLCORE product (end-to-end MLOps platform) by implementing research ideas, organizing through prototyping, and Integrating it with numerous cloud services, attracting an additional four significant clients. (Interpersonal Skills)
+
+4.2. Software Engineer - Full Stack Development Division - Winjit Technologies
+4.2.1. Engineered 10+ RESTful APIs Architecture and Distributed services; Managed and optimized large-scale Databases; Designed 30+ low-latency responsive UI/UX application features with high-quality web architecture. (Systems Design)
+4.2.2. Initiated and designed a standardized solution for dynamic forms generation, with customizable CSS capabilities feature, which reduces development time by 8x; Led and collaborated with a 12 member cross-functional team. (Idea Generation)
+
+4.3. Software Engineer - Deep Learning Division - Automation Teknix
+4.3.1. Devised a Lightweight Object Recognition Engine with a low computational cost by leveraging an SSD algorithm with MobilenetV2 architecture, which decreased survey error by 22%. (Problem Identification)
+4.3.2. Conducted thorough Initial research; prototyped deep learning flow; conceptualized POC, training, and monitoring of models. This resulted in a 7% increase in accuracy and reduced inference time by 2x. (Experiment Design)
+
+5. PROJECT EXPERIENCE
+5.1. Detecting Forest Wood Fire using IoT Sensor Data
+5.1.1. Devised a TabNet Classifier Model having 98.7% accuracy in detecting forest fire through IoT sensor data, deployed on AWS and edge devices 'Silvanet Wildfire Sensors' using technologies TinyML, Docker, Redis, and celery. (Volunteer work)
+5.1.2. Examine and utilize many performance metrics (Recall, F2 score, sensitivity, specificity. etc.) to reduce high type II error. Performed Model Exploration, Analysis, and Optimization. (Client Advisory)
+
+5.2. Stock Market Analysis
+5.2.1. Conducted in-depth Exploratory Data Analysis (EDA) and utilized data visualization techniques for comprehensive stock market analysis. Implemented a range of statistical and ML models on diverse time-series stocks to extract insights and predictions. Improved performance by 27% on the “clustering and diversification analysis”. (Quantitative Analysis)
+
+5.3. Speech Emotion Recognition
+5.3.1. Researched and optimized existing emotion detection approaches by combining CNN and LSTM networks. Discovered emotion-affecting attributes in voice by analyzing audio signal features-MFCC, ZCR, Pitch, and Chroma. (New Techniques)
+5.3.2. Compressed audio data using an Autoencoder technique to avoid data loss. Due to this, we were able to boost the accuracy of the speech model by 31%. Used tools like PyTorch, Librosa, puAudioAnalysis, and Tensorboard. (Process Optimisation)
+
+6. CERTIFICATIONS/ADDITIONAL COURSES
+6.1. Server-side Backend Development - The Hong Kong University of Science and Technology.
+6.2. Front-End Web UI Frameworks and Tools - The Hong Kong University of Science and Technology.
+6.3. Microsoft Azure Fundamentals - Udemy.
+6.4. MLOps for AI Engineers and Data Scientists - Omdena Inc.
+6.5. Deep Learning Specialization - [DeepLearning.AI](http://deeplearning.ai/), Coursera Inc.
+
+7. ACHIEVEMENTS/CO-CURRICULAR/EXTRACURRICULAR
+7.1. Received the 'Extra Miller - 2021' award at Winjit Technologies for outstanding performance.
+7.2. Finalist in E-yantra Robotics Competition 2018 - IITB.
+7.3. President of Machine Learning Club: Led a team of 20 people in a project and was awarded "Best Project of the Year."
+7.4. Dance Section's Head of PICT Art Circle: Best dance choreography for Winning "Firodiya theater competition 2019."
+7.5. Performed in multiple award-winning state-level drama competitions and received the best organized team prize thrice.
+7.6. An active member of the “National Community Service”.
