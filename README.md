@@ -16,6 +16,16 @@ Reported bugs/fixes will be submitted to correction.
     - Before Start - Installation
     - Module Structure
 
+## Setup
+- Python^3.10.12
+- Linux
+- Playwright
+    ```bash
+    >>> pip3 install playwright
+    >>> playwright install
+    ```
+
+
 ## Bugs :
 
 ## Limitation and Further growth : 

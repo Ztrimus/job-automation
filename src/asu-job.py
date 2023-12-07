@@ -89,6 +89,7 @@ with sync_playwright() as playwright:
         page.get_by_role("link", name="Student Employment - Job Search").click()
         page.get_by_role("button", name="Search On-Campus Jobs").click()
         page.get_by_role("button", name="Search").click()
+        page.query_selector('#Job_0').click()
 
         while True:
             should_i_autofill = input('Autofill or Exit? (a/e) : ')
