@@ -1,0 +1,18 @@
+Dear Hiring Manager,
+
+I am writing to express my interest in the position of Research Aide: CIS at your organization. After reviewing the job description, I am confident that my skills and experiences make me a perfect fit for this role.
+
+Based on the job description, I have identified three key skills that are necessary for the job: research projects, web scraping, and programming algorithms. I have a proven track record in these areas and believe my expertise aligns well with the requirements of the position.
+
+In my current role as a Senior Machine Learning Engineer at Tiger Analytics, I have successfully spearheaded the development of comprehensive data and CI/CD pipelines for research projects. This involved utilizing web scraping techniques and programming algorithms to gather and process large datasets. My experience in literature reviews and data cleansing also prepared me for the responsibilities outlined in the job description.
+
+Additionally, my previous work as a Deep Learning Engineer at Automation Teknix required a strong understanding of programming algorithms and web scraping. I developed a lightweight object recognition engine using an SSD algorithm and MobilenetV2 architecture. This experience equipped me with the skills necessary for conducting research and implementing programming algorithms effectively.
+
+Moreover, I possess a significant amount of specialized training and experience in the field of information systems and research projects. I am highly responsible and responsive, with excellent communication skills. My familiarity with various CIS subjects, programs, and languages, as well as my expertise in online work, further strengthen my qualifications for this role.
+
+I am confident that my passion for research projects, expertise in web scraping and programming algorithms, and strong communication skills make me the ideal candidate for the Research Aide: CIS position. I am excited about the opportunity to contribute to your organization's research projects and support your team in achieving its goals.
+
+Thank you for considering my application. I have attached my resume for your review. I look forward to the opportunity to discuss how my skills and experiences align with your organization further.
+
+Sincerely,
+Saurabh Zinjad

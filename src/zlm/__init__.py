@@ -172,13 +172,16 @@ class AutoApplyModel:
         chat_gpt = ChatGPT(openai_api_key=self.openai_key, system_prompt=system_prompt)
         response = chat_gpt.get_response(query, expecting_longer_output=True)
         resume_details = json.loads(response)
+        resume_details['keywords'] = job_details['keywords']
         resume_path = job_doc_name(job_details, self.downloads_dir, "resume")
 
         write_json(resume_path, resume_details)
 
-        latex_to_pdf(resume_details, resume_path.replace(".json", ".pdf"))
-        print("Resume PDF generated at: ", resume_path.replace(".json", ".pdf"))
-        return resume_details
+        resume_path = resume_path.replace(".json", ".pdf")
+
+        latex_to_pdf(resume_details, resume_path)
+        print("Resume PDF generated at: ", resume_path)
+        return resume_path
 
     @measure_execution_time
     def cover_letter_generator(self, job_details: dict, user_data: dict):
@@ -216,11 +219,7 @@ class AutoApplyModel:
         cv_path = job_doc_name(job_details, self.downloads_dir, "cv")
         write_file(cv_path, cover_letter)
         print("Cover Letter generated at: ", cv_path)
-        is_cv_to_pdf = input("Want cover letter as PDF? (y/n): ")
-        if is_cv_to_pdf.strip().lower() == "y":
-            text_to_pdf(cover_letter, cv_path.replace(".txt", ".pdf"))
-            print("Cover Letter PDF generated at: ", cv_path.replace(".txt", ".pdf"))
-        return cover_letter
+        return cv_path
 
     def resume_cv_pipeline(self, job_url: str, user_data_path: str = demo_data_path):
         """Run the Auto Apply Pipeline.

@@ -8,6 +8,7 @@ Copyright (c) 2023 Saurabh Zinjad. All rights reserved | GitHub: Ztrimus
 -----------------------------------------------------------------------
 '''
 
+import re
 import os
 import time
 import json
@@ -40,24 +41,24 @@ def read_json(file_path: str):
 
 
 def job_doc_name(job_details: dict, output_dir: str = "output", type: str = ""):
-    company_name = clean_string(job_details["company_name"])
     job_title = clean_string(job_details["title"])[:15]
-    doc_name = "_".join([company_name, job_title])
-    doc_dir = os.path.join(output_dir, company_name)
+    doc_dir = os.path.join(output_dir, job_title)
     os.makedirs(doc_dir, exist_ok=True)
 
     if type == "jd":
-        return os.path.join(doc_dir, f"{doc_name}_JD.json")
+        return os.path.join(doc_dir, f"{job_title}_JD.json")
     elif type == "resume":
-        return os.path.join(doc_dir, f"{doc_name}_resume.json")
+        return os.path.join(doc_dir, f"{job_title}_resume.json")
     elif type == "cv":
-        return os.path.join(doc_dir, f"{doc_name}_cv.txt")
+        return os.path.join(doc_dir, f"{job_title}_cv.txt")
     else:
-        return os.path.join(doc_dir, f"{doc_name}_")
+        return os.path.join(doc_dir, f"{job_title}_")
 
 
 def clean_string(text: str):
-    return text.title().replace(" ", "").strip()
+    text = text.title().replace(" ", "").strip()
+    text = re.sub(r"[^a-zA-Z0-9]+", "", text)
+    return text
 
 
 def open_file(file: str):

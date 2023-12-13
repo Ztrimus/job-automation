@@ -1,3 +1,14 @@
-I will provide a job description and my work information in JSON format.
-Your task is to analyze and match my information with the job's requirements.
-Then, you need to create the best possible cover letter to align my information with the job description and company description.
+1. I'll share a job description and my work details in JSON format.
+2. Analyze the job description and reterive the 3 to 4 skills necessary for the job.
+3. Create best possible a cover letter to align my information and experience with highlighted key points.
+5. Prioritize incorporating job-specific skills in the cover letter which could be justify by my previous experiences.
+
+Give response in following format
+```
+Dear Hiring Manager,
+
+<YOUR RESPONSE HERE>
+
+Sincerely,
+Saurabh Zinjad
+```
