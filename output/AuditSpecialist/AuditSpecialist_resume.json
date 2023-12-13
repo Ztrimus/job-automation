@@ -1,0 +1,298 @@
+{
+  "name": "Saurabh Bhausaheb Zinjad",
+  "personal": {
+    "phone": "+1 480-913-5544",
+    "email": "saurabhzinjad@asu.edu",
+    "github": "github.com/Ztrimus",
+    "linkedin": "linkedin.com/in/saurabhzinjad"
+  },
+  "education": [
+    {
+      "degree": "Masters of Science in Computer Science",
+      "university": "Arizona State University, Tempe, USA",
+      "from": "August 2023",
+      "to": "May 2025",
+      "grade": "4/4",
+      "coursework": [
+        "Social Media Mining",
+        "Knowledge Representation and Reasoning Algorithms",
+        "Statistical Machine Learning"
+      ]
+    },
+    {
+      "degree": "Bachelor of Engineering",
+      "university": "Pune Institute of Computer Technology(PICT), Savitribai Phule Pune University, India",
+      "from": "July 2015",
+      "to": "June 2019",
+      "grade": "8.53/10",
+      "coursework": [
+        "DSA",
+        "OOP",
+        "OS",
+        "System Programming",
+        "Computer Networks",
+        "Information Theory",
+        "Artificial Intelligence",
+        "Machine learning",
+        "Digital Video and Image Processing"
+      ]
+    }
+  ],
+  "technical": [
+    {
+      "name": "Programming Languages",
+      "skills": [
+        "Python",
+        "JavaScript",
+        "C#",
+        "C++",
+        "SQL",
+        "R",
+        "Java",
+        "Shell Scripting"
+      ]
+    },
+    {
+      "name": "Data Science",
+      "skills": [
+        "Databricks",
+        "PySpark",
+        "TensorFlow",
+        "PyTorch",
+        "MXNet",
+        "OpenCV",
+        "Scikit Learn",
+        "Pandas",
+        "Matplotlib",
+        "Keras"
+      ]
+    },
+    {
+      "name": "Cloud and DevOps",
+      "skills": [
+        "Azure",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "MLFlow",
+        "Jupyter Notebook",
+        "Git"
+      ]
+    },
+    {
+      "name": "Full-Stack Tech",
+      "skills": [
+        "Angular",
+        "React",
+        ".Net Core",
+        "NodeJs",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "MongoDB",
+        "SQL Server",
+        "MySQL",
+        "Postman"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "role": "Senior Machine Learning Engineer",
+      "company": "Tiger Analytics",
+      "location": "Bangalore, India",
+      "from": "June 2022",
+      "to": "July 2023",
+      "description": [
+        "Reviewed transactions and determined pass or fail",
+        "Adhered to ASU Financial Services Policy and Procedures",
+        "Handled cash, checks, and credit cards",
+        "Adhered to computer usage policies and codes of conduct",
+        "Completed assigned duties in a timely manner",
+        "Maintained a professional work environment",
+        "Provided excellent customer service",
+        "Performed other specified duties",
+        "Represented department/program professionally"
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Winjit Technologies",
+      "location": "Pune, India",
+      "from": "January 2020",
+      "to": "June 2022",
+      "description": [
+        "Engineered RESTful APIs Architecture and Distributed services",
+        "Designed low-latency responsive UI/UX application features with high-quality web architecture",
+        "Managed and optimized large-scale Databases",
+        "Initiated and Designed a standardized solution for dynamic forms generation with customizable CSS capabilities feature",
+        "Led and collaborated with a cross-functional team"
+      ]
+    },
+    {
+      "role": "Deep Learning Engineer",
+      "company": "Automation Teknix",
+      "location": "Pune, India",
+      "from": "September 2019",
+      "to": "January 2020",
+      "description": [
+        "Devised a Lightweight Object Recognition Engine with a low computational cost by leveraging an SSD algorithm with MobilenetV2 architecture",
+        "Conducted thorough Initial research, prototyped neural network flow, and conceptualized POC, training, and monitoring of models"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Streamlining Job Applications with LLM Automation Pipeline",
+      "link": "https://pypi.org/project/zlm/",
+      "from": "Oct 2023",
+      "to": "Dec 2023",
+      "description": [
+        "Developed a Python library to optimize the job application workflow that generates curated resumes and personalized cover letters tailored to specific job roles",
+        "Utilized advanced techniques including Prompt Engineering, Web Scraping, and integration of various Large Language Models to enhance the effectiveness of the application"
+      ]
+    },
+    {
+      "name": "Search Engine for All File Types - Sunhack Hackathon - Meta & Amazon Sponsored",
+      "link": "https://devpost.com/software/team-soul-1fjgwo",
+      "from": "3 Nov 2023",
+      "to": "5 Nov 2023",
+      "description": [
+        "Developed Python FAST API and Angular development for Big Data Awards",
+        "Converted and stored every file type data as vector embeddings for low-latency search capabilities",
+        "Utilized Machine Learning techniques such as BERT, OCR, ResNet50, and Image Captioning to parse Image features",
+        "Contributed to Elasticsearch implementation for blazing-fast search responses"
+      ]
+    },
+    {
+      "name": "GenAI's Capabilities and Boundaries Exploration - Prompt Engineering Hackathon for Humanities",
+      "link": "https://www.linkedin.com/pulse/exploring-depths-ai-story-writing-prompt-engineering-hackathon-wbqwc",
+      "from": "13 Oct 2023",
+      "to": "15 Oct 2023",
+      "description": [
+        "Crafted an AI persona to explore LLM's subtle contextual understanding and create innovative collaborations between humans and machines",
+        "Addressed limitations in narrative flow, simplicity, emotional depth, and hallucinations through innovative approaches",
+        "Demonstrated creative mindset and ability to navigate complex tasks and adapt to evolving requirements during the hackathon"
+      ]
+    },
+    {
+      "name": "Forest Fire Detection using IoT Sensor Data",
+      "link": "https://github.com/OmdenaAI/Dryad",
+      "from": "September 2021",
+      "to": "January 2022",
+      "description": [
+        "Devised a TabNet Classifier Model having 98.7% accuracy in detecting a forest fire through IoT sensor data",
+        "Deployed the model on AWS and edge devices using technologies TinyML, Docker, Redis, and celery",
+        "Performed Model Exploration, Analysis, and Optimization"
+      ]
+    },
+    {
+      "name": "Stock Market Analysis",
+      "link": "https://github.com/Ztrimus/Stock-Market-Analysis",
+      "from": "December 2018",
+      "to": "February 2019",
+      "description": [
+        "Conducted in-depth Exploratory Data Analysis (EDA) and utilized data visualization techniques for comprehensive stock market analysis",
+        "Implemented a range of statistical and ML models on diverse time-series stocks to extract insights and predictions",
+        "Improved performance by 27% on clustering and diversification analysis"
+      ]
+    },
+    {
+      "name": "Autonomous Surveillance Monitoring System",
+      "link": "",
+      "from": "February 2019",
+      "to": "June 2019",
+      "description": [
+        "Built a surveillance engine to detect and alert about suspicious behaviors on campus by constructing a computer vision pipeline",
+        "Utilized OpenCV, MediaPipe, TensorFlow, MLFlow, and Flask",
+        "Deployed the system on college premises"
+      ]
+    },
+    {
+      "name": "Speech Emotion Recognition",
+      "link": "https://github.com/Ztrimus/speech-emotion-recognition",
+      "from": "November 2018",
+      "to": "February 2019",
+      "description": [
+        "Researched and optimized existing emotion detection approaches by combining CNN and LSTM networks",
+        "Discovered emotion-affecting attributes in voice by analyzing audio signal features",
+        "Compressed audio data using an Autoencoder technique to boost model accuracy",
+        "Used tools like PyTorch, Librosa, puAudioAnalysis, and Tensorboard"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Deep Learning Specialization",
+      "by": "DeepLearning.AI, Coursera Inc.",
+      "link": "https://www.coursera.org/account/accomplishments/specialization/G3WPNWRYX628"
+    },
+    {
+      "name": "MLOps for AI Engineers and Data Scientists",
+      "by": "Omdena Inc.",
+      "link": "https://drive.google.com/file/d/1fh4AEscb0P82nfoaA-muWMzmFngzyk2g/view"
+    },
+    {
+      "name": "Microsoft Azure Fundamentals",
+      "by": "Udemy",
+      "link": "https://www.udemy.com/certificate/UC-37e943d1-e7f7-4d27-a1e4-e799aef7013b/"
+    },
+    {
+      "name": "Server-side Backend Development",
+      "by": "The Hong Kong University of Science and Technology",
+      "link": "https://www.coursera.org/account/accomplishments/verify/TYMQX23D4HRQ"
+    },
+    {
+      "name": "Front-End Web UI Frameworks and Tools",
+      "by": "The Hong Kong University of Science and Technology",
+      "link": "https://www.coursera.org/account/accomplishments/verify/TW8MA6MEXSCZ"
+    }
+  ],
+  "achievements": [
+    "1st runner-up in Prompt Engineering Hackathon 2023 for Humanities",
+    "Best Data Awards in Major League Hacking sponsored hackathon SunHacks 2023",
+    "Received the 'Extra Miller - 2022' award at Tiger Analysis for outstanding performance",
+    "President of Machine Learning Club: Led a team of 20 people and was awarded 'Best Project of the Year 2019'",
+    "Finalist in E-yantra Robotics Competition 2018 - IITB",
+    "Dance Section's Head of PICT Art Circle: Best dance choreography for Winning 'Firodiya theater competition 2019'",
+    "Performed in multiple award-winning state-level drama competitions and received the best-organized team prize thrice",
+    "An active member of the NSS (National Community Service Group in PICT) in 2016"
+  ],
+  "keywords": [
+    "Audit Specialist",
+    "review transactions",
+    "decisioning",
+    "pass or fail",
+    "VP Office with Educational Outreach and Student Services",
+    "backup other student functions",
+    "professional behavior",
+    "office environment",
+    "ASU Financial Services Policy and Procedures",
+    "cash handling",
+    "check handling",
+    "credit card handling",
+    "ASU computer usage policies",
+    "codes of conduct",
+    "timely completion of duties",
+    "professional work environment",
+    "customer service",
+    "business operations",
+    "teaching/research aide",
+    "specialized skills",
+    "technical knowledge",
+    "Undergraduate Business",
+    "Finance",
+    "Accounting students",
+    "accounting practices",
+    "attention to detail",
+    "Windows-based computer programs",
+    "Google Docs",
+    "excel spreadsheets",
+    "multi-tasking",
+    "confidentiality",
+    "professionalism",
+    "customer service skills",
+    "office procedure",
+    "office policy"
+  ]
+}

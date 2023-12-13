@@ -1,0 +1,24 @@
+Dear Hiring Manager,
+
+I am writing to express my strong interest in the position of Web Designer (FWS Eligible) Student Worker IV at your organization. With my extensive experience and skills in web design, user interface development, and project management, I believe I am an ideal candidate for this role.
+
+Based on the job description, I have identified the following key skills required for this position:
+
+1. Web design: I have completed coursework that focused on web design principles and techniques. I possess a solid understanding of layout, theming, and functional UI design.
+
+2. Frontend development: I am proficient in HTML, CSS, and JavaScript, with experience in developing responsive web applications. I have worked with frontend frameworks such as JQuery, Vue.js, and Angular.js, and I am familiar with web templating engines like JSP, Thymeleaf, and Django templates.
+
+3. Collaboration and communication: I have excellent written and oral communication skills, which are essential for effective collaboration with development teams. I have previously worked in cross-functional teams, demonstrating my ability to communicate effectively and work collaboratively to achieve project goals.
+
+4. Problem-solving: I am a creative problem solver with a proactive approach to finding solutions. I can apply my critical thinking skills and technical expertise to address design challenges and deliver functional UX designs.
+
+In my current role as a Senior Machine Learning Engineer at Tiger Analytics, I spearheaded the development of interactive dashboards, constraint-based ML models, and comprehensive documentation for MSP Value Optimization in the Petcare sector. This experience has not only honed my technical skills but also instilled in me a commitment to delivering solutions that seamlessly blend functionality and user experience.
+
+As a Software Engineer at Winjit Technologies, I designed and engineered RESTful APIs, optimizing UI/UX features and managing large-scale databases. My initiative in creating a standardized solution for dynamic forms generation, reducing development time by 8x, reflects my ability to innovate and streamline processes.
+
+I am particularly drawn to the opportunity to work alongside a dynamic team of developers, guiding design choices, and occasionally supporting the research team with data collection and cleaning. My ability to work both independently and collaboratively, coupled with my excellent written and oral communication skills, positions me as an ideal candidate for this role.
+
+I am confident that my skills and experiences align perfectly with the requirements stated in the job description. I am excited about the prospect of bringing my unique blend of technical expertise and creative problem-solving to the Digital Innovation Group. Thank you for considering my application. I look forward to the possibility of discussing how my skills align with your team's vision.
+
+Sincerely,
+Saurabh Zinjad

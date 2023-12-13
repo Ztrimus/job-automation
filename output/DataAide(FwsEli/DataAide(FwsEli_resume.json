@@ -1,0 +1,235 @@
+{
+  "name": "Saurabh Bhausaheb Zinjad",
+  "personal": {
+    "phone": "+1 480-913-5544",
+    "email": "saurabhzinjad@asu.edu",
+    "github": "github.com/Ztrimus",
+    "linkedin": "linkedin.com/in/saurabhzinjad"
+  },
+  "education": [
+    {
+      "degree": "Masters of Science in Computer Science",
+      "university": "Arizona State University, Tempe, USA",
+      "from": "August 2023",
+      "to": "May 2025",
+      "grade": "4/4",
+      "coursework": [
+        "Social Media Mining",
+        "Knowledge Representation and Reasoning Algorithms",
+        "Statistical Machine Learning"
+      ]
+    },
+    {
+      "degree": "Bachelor of Engineering",
+      "university": "Pune Institute of Computer Technology(PICT), Savitribai Phule Pune University, India",
+      "from": "July 2015",
+      "to": "June 2019",
+      "grade": "8.53/10",
+      "coursework": [
+        "DSA",
+        "OOP",
+        "OS",
+        "System Programming",
+        "Computer Networks",
+        "Information Theory",
+        "Artificial Intelligence",
+        "Machine learning",
+        "Digital Video and Image Processing"
+      ]
+    }
+  ],
+  "technical": [
+    {
+      "name": "Programming Languages",
+      "skills": [
+        "Python",
+        "JavaScript",
+        "C#",
+        "C++",
+        "SQL",
+        "R",
+        "Java",
+        "Shell Scripting"
+      ]
+    },
+    {
+      "name": "Data Science",
+      "skills": [
+        "Databricks",
+        "PySpark",
+        "TensorFlow",
+        "PyTorch",
+        "MXNet",
+        "OpenCV",
+        "Scikit Learn",
+        "Pandas",
+        "Matplotlib",
+        "Keras"
+      ]
+    },
+    {
+      "name": "Cloud and DevOps",
+      "skills": [
+        "Azure",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "MLFlow",
+        "Jupyter Notebook",
+        "Git"
+      ]
+    },
+    {
+      "name": "Full-Stack Tech",
+      "skills": [
+        "Angular",
+        "React",
+        ".Net Core",
+        "NodeJs",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "MongoDB",
+        "SQL Server",
+        "MySQL",
+        "Postman"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "role": "Senior Machine Learning Engineer",
+      "company": "Tiger Analytics",
+      "location": "Bangalore, India",
+      "from": "June 2022",
+      "to": "July 2023",
+      "description": [
+        "Developed Interactive Dashboards, Constraint-based ML Models, Web App, Data & CI/CD pipelines, and Comprehensive Documentation for MSP Value Optimization in Petcare sector with a team of 8 analysts.",
+        "Created end-to-end MLOps platform (MLCORE product) by implementing research ideas, prototyping, backend API Implementation, and Integrating it with numerous cloud services, attracting four significant clients."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Winjit Technologies",
+      "location": "Pune, India",
+      "from": "January 2020",
+      "to": "June 2022",
+      "description": [
+        "Engineered RESTful APIs Architecture and Distributed services; Designed low-latency responsive UI/UX application features with high-quality web architecture; Managed and optimized large-scale Databases.",
+        "Designed a standardized solution for dynamic forms generation, reducing development time by 8x; Led and collaborated with a 12-member cross-functional team."
+      ]
+    },
+    {
+      "role": "Deep Learning Engineer",
+      "company": "Automation Teknix",
+      "location": "Pune, India",
+      "from": "September 2019",
+      "to": "January 2020",
+      "description": [
+        "Developed a Lightweight Object Recognition Engine with a low computational cost using SSD algorithm with MobilenetV2 architecture, decreasing survey error by 22%.",
+        "Conducted research, prototyped neural network flow, conceptualized POC, training, and monitoring of models. This resulted in a 7% increase in accuracy and reduced inference time by 2x."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Streamlining Job Applications with LLM Automation Pipeline",
+      "link": "https://pypi.org/project/zlm/",
+      "from": "Oct 2023",
+      "to": "Dec 2023",
+      "description": [
+        "Developed a Python library to optimize the job application workflow that generates curated resumes and personalized cover letters tailored to specific job roles.",
+        "Utilized advanced techniques including Prompt Engineering, Web Scraping, and integration of various Large Language Models to enhance the effectiveness of the application."
+      ]
+    },
+    {
+      "name": "Search Engine for All file types - Sunhack Hackathon - Meta & Amazon Sponsored",
+      "link": "https://devpost.com/software/team-soul-1fjgwo",
+      "from": "3 Nov 2023",
+      "to": "5 Nov 2023",
+      "description": [
+        "Worked on Python FAST API and Angular development, providing efficient data access and retrieval.",
+        "Converted and stored every file-type data as vector embeddings, ensuring low-latency search capabilities.",
+        "Used Machine Learning techniques such as BERT, OCR, ResNet50, and Image Captioning to parse Image features.",
+        "Contributed to Elasticsearch implementation for blazing-fast search responses, with millisecond response times."
+      ]
+    },
+    {
+      "name": "GenAI\u2019s Capabilities and Boundaries Exploration - Prompt Engineering Hackathon for Humanities",
+      "link": "https://www.linkedin.com/pulse/exploring-depths-ai-story-writing-prompt-engineering-hackathon-wbqwc",
+      "from": "13 Oct 2023",
+      "to": "15 Oct 2023",
+      "description": [
+        "Came first runner up in crafted AI persona, exploring LLM's subtle contextual understanding and creating innovative collaborations between humans and machines.",
+        "Addressed limitations in narrative flow, simplicity, emotional depth, and hallucinations through innovative approaches.",
+        "Successfully identified and addressed challenges in LLM's storytelling capabilities."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Deep Learning Specialization",
+      "by": "DeepLearning.AI, Coursera Inc.",
+      "link": "https://www.coursera.org/account/accomplishments/specialization/G3WPNWRYX628"
+    },
+    {
+      "name": "MLOps for AI Engineers and Data Scientists",
+      "by": "Omdena Inc.",
+      "link": "https://drive.google.com/file/d/1fh4AEscb0P82nfoaA-muWMzmFngzyk2g/view"
+    },
+    {
+      "name": "Microsoft Azure Fundamentals",
+      "by": "Udemy",
+      "link": "https://www.udemy.com/certificate/UC-37e943d1-e7f7-4d27-a1e4-e799aef7013b/"
+    },
+    {
+      "name": "Server-side Backend Development",
+      "by": "The Hong Kong University of Science and Technology",
+      "link": "https://www.coursera.org/account/accomplishments/verify/TYMQX23D4HRQ"
+    },
+    {
+      "name": "Front-End Web UI Frameworks and Tools",
+      "by": "The Hong Kong University of Science and Technology",
+      "link": "https://www.coursera.org/account/accomplishments/verify/TW8MA6MEXSCZ"
+    }
+  ],
+  "achievements": [
+    "1st runner-up in \"Prompt Engineering Hackathon 2023 for Humanities\"",
+    "Best Data Awards in Major League Hacking sponsored hackathon SunHacks 2023.",
+    "Received the 'Extra Miller - 2022' award at Tiger Analysis for outstanding performance.",
+    "President of Machine Learning Club: Led a team of 20 people in a project and was awarded \"Best Project of the Year 2019.\"",
+    "Finalist in E-yantra Robotics Competition 2018 - IITB.",
+    "Dance Section's Head of PICT Art Circle: Best dance choreography for Winning \"Firodiya theater competition 2019.\"",
+    "Performed in multiple award-winning state-level drama competitions and received the best-organized team prize thrice.",
+    "Active member of the NSS (National Community Service Group in PICT) in 2016."
+  ],
+  "keywords": [
+    "data entry",
+    "CDC database",
+    "writing sample",
+    "criminal justice",
+    "public health research",
+    "data collection",
+    "data cleaning",
+    "data reporting",
+    "data coding",
+    "data abstraction",
+    "data summarization",
+    "AZ-VDRS",
+    "SUDORS",
+    "CDC systems",
+    "sensitive information",
+    "data handling",
+    "police agency",
+    "medical examiner's office",
+    "criminology",
+    "death investigation",
+    "Microsoft Word",
+    "Microsoft Excel",
+    "Google Docs",
+    "Google Sheets",
+    "CCJ",
+    "background check",
+    "Federal Work-Study eligibility"
+  ]
+}

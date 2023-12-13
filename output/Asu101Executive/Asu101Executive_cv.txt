@@ -1,0 +1,17 @@
+Dear Hiring Manager,
+
+I am writing to express my interest in the position of ASU 101 Executive Section Leader Student Worker at your institution. With my diverse experiences and skills in student support and academic collaboration, I believe I am well-suited for this role.
+
+Throughout my 4+ years of professional experience as a Senior Machine Learning Engineer and Software Engineer, I have developed strong communication and leadership skills, which would enable me to effectively serve as a liaison and a mentor to ASU 101 Ira A. Fulton Schools of Engineering freshmen. My experience in spearheading development projects and leading cross-functional teams has honed my ability to collaborate and provide structured support to diverse groups of individuals.
+
+In addition, I have a thorough understanding of the importance of student involvement and academic support. During my tenure as a Research Intern at IMATMI, I conducted in-depth research and developed analytical tools to optimize talent management systems and facilitate professional growth. I also implemented an automated system for identifying "best-fit employees" for projects, resulting in improved project outcomes and resource allocation. I am confident that my experience in student support and mentorship would enable me to increase student involvement and encourage participation in ASU 101 classes.
+
+Moreover, my proficiency in various programming languages, data science, and cloud and DevOps technologies positions me well to assist Fulton faculty instructors with collaborative learning activities in ASU 101 classes. I have a strong foundation in Python, JavaScript, C#, TensorFlow, AWS, Docker, and Git, which would enable me to contribute effectively to the technical aspects of the role.
+
+In conclusion, I believe my experiences and skills align well with the requirements of the ASU 101 Executive Section Leader Student Worker position. My ability to serve as a mentor, liaison, and collaborative teaching aid, combined with my technical expertise, would make me a valuable asset to your institution.
+
+Thank you for considering my application. I look forward to the opportunity to contribute to the success of ASU 101 Ira A. Fulton Schools of Engineering freshmen and the overall mission of your organization.
+
+Sincerely,
+
+Saurabh Zinjad
