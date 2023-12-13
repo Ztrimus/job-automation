@@ -117,10 +117,10 @@ def save_latex_as_pdf(tex_file_path: str, dst_path: str):
 
     if result.returncode != 0:
         print("Exit-code not 0, check result!")
-    try:
-        open_file(dst_path)
-    except Exception as e:
-        print("Unable to open the PDF file.")
+    # try:
+    #     open_file(dst_path)
+    # except Exception as e:
+    #     print("Unable to open the PDF file.")
 
     filename_without_ext = os.path.basename(tex_file_path).split(".")[0]
     unnessary_files = [
