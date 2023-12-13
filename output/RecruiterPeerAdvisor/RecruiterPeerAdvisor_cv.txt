@@ -1,0 +1,18 @@
+Dear Hiring Manager,
+
+I am writing to apply for the position of Recruiter | Peer Advisor (FWS Eligible) Student Worker III with the Global Education Office. I am confident that my skills and experience make me a strong candidate for this role.
+
+Having reviewed the job description, I have identified three key skills that are necessary for success in this position: customer service, marketing, and advising.
+
+Firstly, I have a proven track record of delivering excellent customer service in various professional settings. In my previous role as a Senior Machine Learning Engineer at Tiger Analytics, I spearheaded the development of interactive dashboards and comprehensive documentation for MSP Value Optimization in Petcare sector. I consistently received positive feedback from clients and colleagues for my exceptional customer service skills and the ability to represent the organization in a professional manner.
+
+Secondly, I have experience in marketing and outreach activities. At Winjit Technologies, as a Software Engineer, I designed and implemented low-latency responsive UI/UX application features with high-quality web architecture. I also initiated and designed a standardized solution for dynamic forms generation, with customizable CSS capabilities, which significantly reduced development time. My expertise in graphic design, social media management, and email marketing will add value to the marketing and outreach initiatives of the Global Education Office.
+
+Lastly, I have a strong background in advising and mentoring. During my research internship at IMATMI, I developed analytical tools and streamlined HR processes to optimize talent management systems. I also created a tool to generate goals and action plans for employees, facilitating their professional growth. Additionally, my experience as a Peer Advisor at Automation Teknix involved providing guidance and support to team members, enhancing their performance and improving project outcomes.
+
+In addition to these key skills, my diverse background in computer science and data science equips me with the technical skills necessary to excel in this role. I have expertise in programming languages such as Python, JavaScript, and Java, as well as experience with data science tools like PySpark, TensorFlow, and Scikit Learn. Furthermore, my familiarity with social media mining and statistical machine learning will enable me to contribute effectively to the Global Education Office's mission.
+
+Thank you for considering my application. I am excited about the opportunity to contribute to the Global Education Office's objectives and provide excellent service to students. I have attached my resume for your review, which provides more details about my experience and qualifications. I look forward to the possibility of discussing how my skills and background align with your needs.
+
+Sincerely,
+Saurabh Zinjad
