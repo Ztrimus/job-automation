@@ -28,7 +28,7 @@ def auto_apply(job_content: str):
     job_llm = AutoApplyModel(os.environ['OPENAI_API_KEY'], os.path.abspath('./output'))
     user_data = job_llm.user_data_extraction('src/zlm/demo_data/user_profile.json')
     job_details = job_llm.job_details_extraction(job_content)
-    # job_details = read_json('/home/saurabh/AAA/Convergent/Projects/job-automation/output/SportsProgramsM/SportsProgramsM_JD.json')
+    # job_details = read_json('output/SportsProgramsM/SportsProgramsM_JD.json')
 
     cv_path = job_llm.cover_letter_generator(job_details, user_data)
     resume_path = job_llm.resume_builder(job_details, user_data)
@@ -36,7 +36,7 @@ def auto_apply(job_content: str):
     return cv_path, resume_path
 
 def get_visited_ids() -> set:
-    with open('/home/saurabh/AAA/Convergent/Projects/job-automation/src/visited_job_ids.txt', 'r', encoding='utf-8') as f:
+    with open('src/visited_job_ids.txt', 'r', encoding='utf-8') as f:
         content = f.read()
         content = content.strip(',')
         if content == '':
@@ -45,7 +45,7 @@ def get_visited_ids() -> set:
             return set(content.split(','))
 
 def set_visited_id(id: str) -> set:
-    with open('/home/saurabh/AAA/Convergent/Projects/job-automation/src/visited_job_ids.txt', 'a', encoding='utf-8') as f:
+    with open('src/visited_job_ids.txt', 'a', encoding='utf-8') as f:
         f.write(f'{id},')
 
 if __name__ == '__main__':
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=False)
         try:
-            context = browser.new_context()
+            context = browser.new_context(viewport={'width': 1920, 'height': 1080}, color_scheme='dark')
 
             # login
             webpage = context.new_page()
