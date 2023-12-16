@@ -1,25 +1,15 @@
 {
-  "title": "Research Aide: CIS",
+  "title": "Research Aide: CIS Student Worker III",
   "keywords": [
-    "Research Aide",
     "CIS",
-    "Information Systems",
-    "research projects",
+    "research",
+    "faculty",
     "web scraping",
     "programming algorithms",
     "literature reviews",
-    "data cleansing",
-    "CIS subjects",
-    "CIS programs",
-    "CIS languages",
-    "online work"
+    "data cleansing"
   ],
-  "duties_responsibilities": "Assist faculty in research projects\nBe able to work online\nAssist with web scraping and programming algorithms\nLiterature reviews and data cleansing",
-  "required_qualifications": "A significant amount of specialized training or experience is required.",
-  "preferred_qualifications": [
-    "Familiar with CIS subjects",
-    "Highly responsible and responsive, with great communication skills",
-    "Experience with CIS programs and languages",
-    "Please include all CIS languages and programs with which you are familiar"
-  ]
+  "duties_responsibilities": "Assist faculty in research projects\nWork online\nAssist with web scraping and programming algorithms\nConduct literature reviews and data cleansing",
+  "required_qualifications": "Significant amount of specialized training or experience",
+  "preferred_qualifications": "Familiarity with CIS subjects\nHigh responsibility and responsiveness\nStrong communication skills\nExperience with CIS programs and languages"
 }
