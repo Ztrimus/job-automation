@@ -100,7 +100,7 @@ if __name__ == '__main__':
                     # page_next = webpage.get_by_role("link", name="Next Job")
                     time.sleep(SLEEP_TIME)
                     web_content = re.sub(r'\s+', ' ', webpage.text_content('.jobDetailsLiner.mainDetails')).strip()
-                    print(f"\n========================\n {applied_job+1} : {web_content[:75]}\n========================\n\n")
+                    print(f"\n========================\n {applied_job+1} : {web_content[:75]}\n========================\n")
 
                     cv_path, resume_path = auto_apply(web_content)
 
@@ -128,6 +128,12 @@ if __name__ == '__main__':
                     webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("LOR turuk maam.pdf").check()
                     webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("LOR-Dinesh-Sir.pdf").check()
                     webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("LOR-Bansod-Sir.pdf").check()
+                    webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("Server-side Development with NodeJS, Express.pdf").check()
+                    webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("Omdena Certificate_Dryad_Saurabh Zinjad.pdf").check()
+                    webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("Microsoft Azure Fundmentals Certificate.pdf").check()
+                    webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("Front-End Web UI Frameworks and Tools.pdf").check()
+                    webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("Certificate-MLOps-for-AI-Engineers-and-Data-Scientists.png").check()
+                    webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("Deep Learning Specializations.pdf").check()
                     webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_role("button", name="Add file").click()
                     webpage.get_by_role("button", name="Save and continue").click()
                     time.sleep(SLEEP_TIME)
