@@ -1,6 +1,0 @@
-I will provide a job for your analysis. In your analysis you have to identify the key words, expertise & requirements the job demands.
-
-Your task is consider it to meticulously assess the information and furnish the details like Job title, Keywords(key words are cruical expertise & requirements the job demands), Job duties and responsibilities, Required qualifications, Preferred qualifications in bulleted points. 
-
-Provide them in JSON format with following keys:
-title, keywords, duties_responsibilities, required_qualifications, preferred_qualifications
