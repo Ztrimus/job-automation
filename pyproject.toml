@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 beautifulsoup4 = "^4.12.2"
-openai = "^0.28.1"
+zlm = "^0.1.20"
 fpdf = "^1.7.2"
 pypdf2 = "^3.0.1"
 jinja2 = "^3.1.2"
