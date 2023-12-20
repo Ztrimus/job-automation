@@ -25,10 +25,9 @@ def old_click(page, s):
 
 @measure_execution_time
 def auto_apply(job_content: str):
-    job_llm = AutoApplyModel(os.environ['OPENAI_API_KEY'], os.path.abspath('./output'))
-    user_data = job_llm.user_data_extraction('src/zlm/demo_data/user_profile.json')
-    job_details = job_llm.job_details_extraction(job_content)
-    # job_details = read_json('output/SportsProgramsM/SportsProgramsM_JD.json')
+    job_llm = AutoApplyModel(api_key=os.environ['TOGETHER_KEY'], provider='together', downloads_dir=os.path.abspath('./output'))
+    user_data = job_llm.user_data_extraction()
+    job_details = job_llm.job_details_extraction(job_site_content=job_content)
 
     cv_path = job_llm.cover_letter_generator(job_details, user_data)
     resume_path = job_llm.resume_builder(job_details, user_data)
