@@ -25,11 +25,12 @@ def old_click(page, s):
 
 @measure_execution_time
 def auto_apply(job_content: str):
-    job_llm = AutoApplyModel(api_key=os.environ['TOGETHER_KEY'], provider='together', downloads_dir=os.path.abspath('./output'))
-    user_data = job_llm.user_data_extraction()
-    job_details = job_llm.job_details_extraction(job_site_content=job_content)
+    job_llm = AutoApplyModel(api_key="os", provider="gemini", downloads_dir=os.path.abspath('./output'))
+    user_data, user_embeddings = job_llm.user_data_extraction()
+    job_details, job_embeddings = job_llm.job_details_extraction(job_site_content=job_content)
 
     cv_path = job_llm.cover_letter_generator(job_details, user_data)
+    # resume_path = "/Users/saurabh/Documents/Resume/Resume-Saurabh-Zinjad.pdf"
     resume_path = job_llm.resume_builder(job_details, user_data)
 
     return cv_path, resume_path
@@ -67,6 +68,20 @@ if __name__ == '__main__':
             webpage.goto('https://students.asu.edu/employment/search')
             webpage.locator('.fa-city').click()
 
+            is_remove_cv = False
+
+            # remove overloaded resume and cv
+            if is_remove_cv:
+                webpage.get_by_role("link", name="Candidate Zone").locator("span").click()
+                webpage.query_selector(f'#jobProfile').click()
+                webpage.query_selector(f'#czMyFilesTab').click()
+
+                while webpage.get_by_role("link", name="Remove").first.is_visible():
+                    webpage.get_by_role("link", name="Remove").first.click()
+                    webpage.locator(f'.deleteFileDialog').locator(".primaryButton").first.click()
+                
+                webpage.get_by_role("link", name="Job search").locator("span").click()
+
             webpage.get_by_role("button", name="Search").click()
             time.sleep(SLEEP_TIME)
 
@@ -75,6 +90,7 @@ if __name__ == '__main__':
                     list_locator = webpage.locator('li.job.baseColorPalette.ng-scope')
                     count = list_locator.count()
 
+                    job_id  = ''
                     is_link_clicked = False
                     for i in range(count):
                         job_id = list_locator.nth(i).locator('p.jobProperty.position3').last.text_content()
@@ -107,7 +123,7 @@ if __name__ == '__main__':
                     webpage.get_by_role("button", name="Let's get started").click()
                     webpage.get_by_role("button", name="Save and continue").click()
                     webpage.get_by_role("group", name="Are you currently eligible to work in the United States without ASU sponsorship?").get_by_label("Yes").check()
-                    webpage.get_by_role("group", name="Are you eligible for Federal Work Study?").get_by_label("Yes").check()
+                    webpage.get_by_role("group", name="Are you eligible for Federal Work Study?").get_by_label("No").check()
                     webpage.get_by_role("listbox", name="How did you find out about this job? Choose...").locator("span").first.click()
                     webpage.get_by_role("option", name="Searching ASU Website").get_by_text("Searching ASU Website").click()
                     webpage.get_by_role("button", name="Save and continue").click()
@@ -123,7 +139,6 @@ if __name__ == '__main__':
                     webpage.get_by_role("button", name="Save and continue").click()
                     webpage.get_by_role("link", name="Add file").click()
                     webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_role("button", name="Upload files from Saved Files").click()
-                    webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("ASU-SOP.pdf").check()
                     webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("LOR turuk maam.pdf").check()
                     webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("LOR-Dinesh-Sir.pdf").check()
                     webpage.frame_locator("iframe[title=\"Add documents for Supporting Documentation\"]").get_by_label("LOR-Bansod-Sir.pdf").check()
