@@ -95,10 +95,11 @@ if __name__ == '__main__':
                     for i in range(count):
                         job_id = list_locator.nth(i).locator('p.jobProperty.position3').last.text_content()
                         if job_id not in visited_ids:
-                            webpage.query_selector(f'#Job_{i}').click()
-                            is_link_clicked = True
-                            time.sleep(SLEEP_TIME)
-                            break
+                            if job_id in ['98058BR','98061BR','97991BR', '97995BR', '98013BR', '97964BR', '97913BR', '97907BR', '97868BR', '97867BR', '95847BR', '95713BR', '95314BR']:
+                                webpage.query_selector(f'#Job_{i}').click()
+                                is_link_clicked = True
+                                time.sleep(SLEEP_TIME)
+                                break
                     
                     if not is_link_clicked:
                         webpage.locator('.showMoreJobs').last.click()
