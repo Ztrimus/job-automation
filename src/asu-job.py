@@ -25,13 +25,13 @@ def old_click(page, s):
 
 @measure_execution_time
 def auto_apply(job_content: str):
-    job_llm = AutoApplyModel(api_key="os", provider="gemini", downloads_dir=os.path.abspath('./output'))
-    user_data, user_embeddings = job_llm.user_data_extraction()
-    job_details, job_embeddings = job_llm.job_details_extraction(job_site_content=job_content)
+    job_llm = AutoApplyModel(api_key="os", provider="openai", downloads_dir=os.path.abspath('./output'))
+    user_data = job_llm.user_data_extraction(user_data_path='src/user-profile.json')
+    job_details, jd_path = job_llm.job_details_extraction(job_site_content=job_content)
 
-    cv_path = job_llm.cover_letter_generator(job_details, user_data)
+    resume_path, resume_details = job_llm.resume_builder(job_details, user_data)
     # resume_path = "/Users/saurabh/Documents/Resume/Resume-Saurabh-Zinjad.pdf"
-    resume_path = job_llm.resume_builder(job_details, user_data)
+    cover_letter, cv_path = job_llm.cover_letter_generator(job_details, user_data)
 
     return cv_path, resume_path
 
@@ -66,9 +66,11 @@ if __name__ == '__main__':
             webpage.wait_for_load_state('load')
 
             webpage.goto('https://students.asu.edu/employment/search')
-            webpage.locator('.fa-city').click()
-
+            webpage.get_by_role("link", name="Search on-campus jobs").click()
             is_remove_cv = False
+
+            webpage.get_by_role("button", name="Yes, this is my device").click()
+            
 
             # remove overloaded resume and cv
             if is_remove_cv:
@@ -82,6 +84,7 @@ if __name__ == '__main__':
                 
                 webpage.get_by_role("link", name="Job search").locator("span").click()
 
+            # webpage.fill('input[name=keyWordSearch]', 'Engineering')
             webpage.get_by_role("button", name="Search").click()
             time.sleep(SLEEP_TIME)
 
@@ -95,7 +98,6 @@ if __name__ == '__main__':
                     for i in range(count):
                         job_id = list_locator.nth(i).locator('p.jobProperty.position3').last.text_content()
                         if job_id not in visited_ids:
-                            if job_id in ['98058BR','98061BR','97991BR', '97995BR', '98013BR', '97964BR', '97913BR', '97907BR', '97868BR', '97867BR', '95847BR', '95713BR', '95314BR']:
                                 webpage.query_selector(f'#Job_{i}').click()
                                 is_link_clicked = True
                                 time.sleep(SLEEP_TIME)
