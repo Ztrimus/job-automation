@@ -84,7 +84,9 @@ if __name__ == '__main__':
                 
                 webpage.get_by_role("link", name="Job search").locator("span").click()
 
+            webpage.fill('input[name=keyWordSearch]', 'Python')
             # webpage.fill('input[name=keyWordSearch]', 'Engineering')
+            # webpage.fill('input[name=keyWordSearch]', 'Grader')
             webpage.get_by_role("button", name="Search").click()
             time.sleep(SLEEP_TIME)
 
