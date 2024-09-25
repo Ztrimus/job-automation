@@ -3,6 +3,7 @@ import re
 import time
 
 from zlm import AutoApplyModel
+from screeninfo import get_monitors
 from playwright.sync_api import sync_playwright
 
 SLEEP_TIME = 2
@@ -25,7 +26,8 @@ def old_click(page, s):
 
 @measure_execution_time
 def auto_apply(job_content: str):
-    job_llm = AutoApplyModel(api_key="os", provider="openai", downloads_dir=os.path.abspath('./output'))
+    # Ptovider: GPT or Gemini
+    job_llm = AutoApplyModel(api_key="os", provider="GPT", model="gpt-4o", downloads_dir=os.path.abspath('./output'))
     user_data = job_llm.user_data_extraction(user_data_path='src/user-profile.json')
     job_details, jd_path = job_llm.job_details_extraction(job_site_content=job_content)
 
@@ -51,16 +53,22 @@ def set_visited_id(id: str) -> set:
 if __name__ == '__main__':
     applied_job = 0
     visited_ids = get_visited_ids()
+
+    # Get the screen size of the primary monitor
+    monitor = get_monitors()[0]
+    width = monitor.width
+    height = monitor.height
+
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=False)
         try:
-            context = browser.new_context(viewport={'width': 1920, 'height': 1080}, color_scheme='dark')
+            context = browser.new_context(viewport={'width': width, 'height': height}, color_scheme='dark')
 
             # login
             webpage = context.new_page()
             webpage.goto('https://weblogin.asu.edu/cas/login')
 
-            webpage.fill('input[name=username]', 'szinjad')
+            webpage.fill('input[name=username]', os.environ['ASURITE'])
             webpage.fill('input[name=password]', os.environ['ASURITE_PWD'])
             webpage.click('input[type=submit]')
             webpage.wait_for_load_state('load')
@@ -84,9 +92,9 @@ if __name__ == '__main__':
                 
                 webpage.get_by_role("link", name="Job search").locator("span").click()
 
-            webpage.fill('input[name=keyWordSearch]', 'Python')
+            # webpage.fill('input[name=keyWordSearch]', 'Python')
             # webpage.fill('input[name=keyWordSearch]', 'Engineering')
-            # webpage.fill('input[name=keyWordSearch]', 'Grader')
+            webpage.fill('input[name=keyWordSearch]', 'Grader')
             webpage.get_by_role("button", name="Search").click()
             time.sleep(SLEEP_TIME)
 

@@ -6,14 +6,15 @@ authors = ["Saurabh Zinjad <zinjadsaurabh1997@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11.6"
+python = ">=3.11.6,<3.13"
 playwright = "^1.40.0"
 beautifulsoup4 = "^4.12.2"
-zlm = "^0.1.28"
+zlm = "0.1.35"
 fpdf = "^1.7.2"
 pypdf2 = "^3.0.1"
 jinja2 = "^3.1.2"
 requests = "^2.31.0"
+screeninfo = "^0.8.1"
 
 
 [build-system]
