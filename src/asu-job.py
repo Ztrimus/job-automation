@@ -38,7 +38,7 @@ def auto_apply(job_content: str):
     return cv_path, resume_path
 
 def get_visited_ids() -> set:
-    with open('src/visited_job_ids.txt', 'r', encoding='utf-8') as f:
+    with open('src/visited-asu-jobs.txt', 'r', encoding='utf-8') as f:
         content = f.read()
         content = content.strip(',')
         if content == '':
@@ -47,7 +47,7 @@ def get_visited_ids() -> set:
             return set(content.split(','))
 
 def set_visited_id(id: str) -> set:
-    with open('src/visited_job_ids.txt', 'a', encoding='utf-8') as f:
+    with open('src/visited-asu-jobs.txt', 'a', encoding='utf-8') as f:
         f.write(f'{id},')
 
 if __name__ == '__main__':
