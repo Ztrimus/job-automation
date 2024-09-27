@@ -1,3 +1,4 @@
+import json
 import os
 import re
 import time
@@ -37,18 +38,41 @@ def auto_apply(job_content: str):
 
     return cv_path, resume_path
 
-def get_visited_ids() -> set:
-    with open('src/visited-asu-jobs.txt', 'r', encoding='utf-8') as f:
-        content = f.read()
-        content = content.strip(',')
-        if content == '':
-            return set()
-        else:
-            return set(content.split(','))
+# def get_visited_ids() -> set:
+#     with open('src/visited-asu-jobs.txt', 'r', encoding='utf-8') as f:
+#         content = f.read()
+#         content = content.strip(',')
+#         if content == '':
+#             return set()
+#         else:
+#             return set(content.split(','))
 
-def set_visited_id(id: str) -> set:
-    with open('src/visited-asu-jobs.txt', 'a', encoding='utf-8') as f:
-        f.write(f'{id},')
+# def set_visited_id(id: str) -> set:
+#     with open('src/visited-asu-jobs.txt', 'a', encoding='utf-8') as f:
+#         f.write(f'{id},')
+
+def get_visited_ids() -> set:
+    file_path = 'src/visited-asu-jobs.json'
+    if not os.path.exists(file_path):
+        return set()
+    
+    with open(file_path, 'r', encoding='utf-8') as f:
+        try:
+            data = json.load(f)
+            return set(data.get("visited_job_id", []))
+        except json.JSONDecodeError:
+            return set()
+
+def set_visited_id(id: str) -> None:
+    file_path = 'src/visited-asu-jobs.json'
+    visited_ids = get_visited_ids()
+    visited_ids.add(id)
+    
+    data = {"visited_job_id": list(visited_ids)}
+    
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4)
+
 
 if __name__ == '__main__':
     applied_job = 0
@@ -93,8 +117,10 @@ if __name__ == '__main__':
                 webpage.get_by_role("link", name="Job search").locator("span").click()
 
             # webpage.fill('input[name=keyWordSearch]', 'Python')
+            # webpage.fill('input[name=keyWordSearch]', 'JavaScript')
+            # webpage.fill('input[name=keyWordSearch]', 'SCAI')
             # webpage.fill('input[name=keyWordSearch]', 'Engineering')
-            webpage.fill('input[name=keyWordSearch]', 'Grader')
+            # webpage.fill('input[name=keyWordSearch]', 'Grader')
             webpage.get_by_role("button", name="Search").click()
             time.sleep(SLEEP_TIME)
 
