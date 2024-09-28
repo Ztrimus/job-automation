@@ -19,6 +19,20 @@ from typing import List, Dict
 SLEEP_TIME = 0.5
 MAX_SCROLL_ATTEMPTS = 10
 
+def get_company_list():
+    company_list = ["lyft", "intuit", "american-express", "nvidia", "amazon", "meta", "uber-com", "doordash"]  # Add more companies as needed
+    return company_list
+
+def  get_company_params():
+    # TODO: Currently considering all 3 params, also write for single or double params i.e. facetGeoRegion=103644278&facetCurrentFunction=12
+    company_params= {
+        "facetGeoRegion": {'USA': '103644278', 'India': '102713980'},
+        "facetSchool": {'PICT': '2445691', 'ASU': '4292'},
+        "facetCurrentFunction": {'Engineering': '8', 'HR': '12', 'Project Management': '20', 'IT': '13', 'Research': '24'}
+    }
+
+    return company_params
+
 def measure_execution_time(func):
     def wrapper(*args, **kwargs):
         print(f"Start Function {func.__name__}")
@@ -37,7 +51,7 @@ def login(page):
     page.fill('#username', os.environ['LINKEDIN_EMAIL'])
     page.fill('#password', os.environ['LINKEDIN_PASSWORD'])
     page.click('button[type="submit"]')
-    # page.wait_for_load_state('networkidle')
+    page.wait_for_load_state('load')
 
 def scroll_to_bottom(page):
     prev_height = page.evaluate('document.body.scrollHeight')
@@ -93,6 +107,7 @@ def send_without_note(page, profile_url: str = ''):
 
 def connect_with_profile(page: Page, profile_url: str, timeout: int = 10000):
     try:
+        profile_url = "https://www.linkedin.com/in/cidnyework/"
         page.goto(profile_url)
 
         # Check for the main "Connect" button
@@ -110,6 +125,7 @@ def connect_with_profile(page: Page, profile_url: str, timeout: int = 10000):
                 connect_option = page.query_selector('div.artdeco-dropdown__content--is-open div[aria-label^="Invite"][role="button"]')
 
                 if connect_option:
+                    time.sleep(SLEEP_TIME)
                     connect_option.click()
                 else:
                     print(f"Couldn't find Connect option for {profile_url}")
@@ -135,13 +151,13 @@ def process_person(page, card):
         if button_text == "connect":
             card.locator('button').click()
             send_without_note(page, profile_url)
-        elif button_text == "pending":
-            return
+        elif button_text in ["pending", 'following']:
+            set_visited_linkedin_profile(profile_url)
         elif button_text in ["message", "follow"]:
             if profile_url:
                 connect_with_profile(page, profile_url)
             page.go_back()
-        set_visited_linkedin_profile(profile_url)
+            scroll_to_bottom(page)
 
 def generate_parameter_combinations(params):
     # Get all possible values for each parameter
@@ -165,6 +181,7 @@ def process_company(page, company: str, params: Dict[str, str]):
     base_url = f"https://www.linkedin.com/company/{company}/people/"
 
     query_combinations = generate_parameter_combinations(params)
+    query_combinations.insert(0, 'facetGeoRegion=103644278&facetCurrentFunction=12')
 
     for query_params in query_combinations:
         url = f"{base_url}?{query_params}"
@@ -175,21 +192,6 @@ def process_company(page, company: str, params: Dict[str, str]):
         people_cards = page.locator('.org-people-profile-card')
         for i in range(people_cards.count()):
             process_person(page, people_cards.nth(i))
-
-def  get_company_params():
-    # TODO: Currently considering all 3 params, also write for single or double params i.e. facetGeoRegion=103644278&facetCurrentFunction=12
-    company_params= {
-        "facetGeoRegion": {'USA': '103644278', 'India': '102713980'},
-        "facetSchool": {'PICT': '2445691', 'ASU': '4292'},
-        "facetCurrentFunction": {'Engineering': '8', 'HR': '12', 'Project Management': '20', 'IT': '13', 'Research': '24'}
-    }
-
-    return company_params
-
-def get_company_list():
-    company_list = ["doordash", "uber", "lyft"]  # Add more companies as needed
-
-    return company_list
 
 @measure_execution_time
 def main():
